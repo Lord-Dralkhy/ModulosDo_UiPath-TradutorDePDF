@@ -1,0 +1,5 @@
+Um programinha simples, que converte um arquivo PDF em um arquivo editável pelo Microsoft Word (.docx).
+
+Aviso: Provavelmente o antvírus irá detecta-lo como vírus, basta adicionar a excessão.
+
+Criado por Lord Dralkhy - Magno da Silva Gomes
