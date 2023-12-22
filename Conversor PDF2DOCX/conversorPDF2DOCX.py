@@ -1,4 +1,4 @@
-#V 1.0.0
+#V 1.1.0
 
 import tkinter as tk
 

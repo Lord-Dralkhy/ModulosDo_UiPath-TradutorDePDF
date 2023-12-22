@@ -2,4 +2,4 @@ pip install python-docx
 pip install pyinstaller
 pip install tk
 
-pyinstaller --onefile obterTextoEmDOCX.py
+pyinstaller --onefile --additional-hooks-dir=hooks obterTextoEmDOCX.py
