@@ -1,0 +1,5 @@
+Um programinha simples, que extrai cada parágrafo de um documento DOCX, e exibe na tela, junto com o indice que o representa no documento geral.
+
+Aviso: Provavelmente o antvírus irá detecta-lo como vírus, basta adicionar a excessão.
+
+Criado por Lord Dralkhy - Magno da Silva Gomes

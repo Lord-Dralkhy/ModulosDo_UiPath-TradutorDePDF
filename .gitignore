@@ -1,7 +1,7 @@
-.gitignore
-
 Conversor PDF2DOCX/.idea
 Conversor PDF2DOCX/build
 Conversor PDF2DOCX/conversorPDF2DOCX.spec
 
-Obter Texto de um DOCX
+Obter Texto de um DOCX/.idea
+Obter Texto de um DOCX/build
+Obter Texto de um DOCX/conversorPDF2DOCX.spec
