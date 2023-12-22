@@ -8,3 +8,7 @@ Provavelmente o antvírus irá detectar os executáveis como vírus, basta adici
 # Conversor de PDF para DOCX
 
 Este módulo serve para converter um arquivo .pdf para um .docx . Ele Irá auxiliar o robô, tornando os PDFs editáveis.
+
+# Obter texto de um DOCX
+
+Este módulo serve para obter todos os textos contidos nos parágrafos de um documento .docx. Ele Irá auxiliar o robô, exibindo os textos.
