@@ -1,0 +1,9 @@
+v1.0.0
+-Lançamento
+
+v1.1.0
+-Adicionado correção nas dependências
+
+v1.2.0
+-Melhorias na lógica
+-Correções no projeto

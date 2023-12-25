@@ -1,4 +1,28 @@
-#v 1.1.0
+"""
+# Obtendo Texto de um Documento DOCX v1.2.0
+
+## Visão Geral
+
+Este script em Python utiliza a biblioteca `tkinter` para criar uma interface gráfica simples que solicita ao usuário o caminho de um arquivo DOCX.
+O programa, em seguida, lê o conteúdo do arquivo e exibe cada parágrafo em caixas de diálogo separadas.
+
+## Pré-requisitos
+
+Certifique-se de ter a biblioteca `tkinter` e `python-docx` instaladas. Você pode instalar essas dependências usando o seguinte comando:
+
+pip install tk python-docx
+
+## Como Executar
+
+Execute o script e uma janela de diálogo será exibida solicitando o caminho do arquivo DOCX. Insira o caminho ou clique em "Cancelar" para encerrar o programa.
+
+## Aviso
+
+- Este programa foi criado por Lord Dralkhy - Magno da Silva Gomes.
+- GitHub: https://github.com/Lord-Dralkhy
+
+Aproveite a simplicidade e eficiência para obter texto de um documento DOCX!
+"""
 
 import tkinter as tk
 
@@ -7,49 +31,61 @@ from tkinter import simpledialog, messagebox
 
 #------------------------------------------
 
-# Cria uma janela principal oculta
-root = tk.Tk()
-root.withdraw()
+def obterCaminhoDocx():
 
-# Solicita um texto ao usuário usando a caixa de diálogo
-DOCXSelecionado = simpledialog.askstring("Escolher DOCX", "Digite o caminho do arquivo DOCX (com o formato):")
+    # Dando um feedback para o usuário
+    print('Solicitando arquivo')
 
-#------------------------------------------
+    #Solicita e retorna o caminho do arquivo DOCX
+    return simpledialog.askstring("Escolher DOCX", "Digite o caminho do arquivo DOCX (com o formato):")
 
-if DOCXSelecionado == "Criado por":
+def main():
 
-    # Exibe uma mensagem na tela com um botão "OK"
-    messagebox.showinfo("Criado por:", "Este programa foi feito por:\nLord Dralkhy - Magno da Silva Gomes")
+    # Dando um feedback para o usuário
+    print('Iniciando sistema')
 
-else:
+    # Cria uma janela principal oculta
+    root = tk.Tk()
+    root.withdraw()
 
-#------------------------------------------
+    # Solicita o caminho do arquivo DOCX
+    DOCXSelecionado = obterCaminhoDocx()
 
-    #---
+    #------------------------------------------
 
-    # Contadores para o controle
-    paragrafoAtual = 0
-    paragrafoTotal = len(Document(DOCXSelecionado).paragraphs)
+    if not DOCXSelecionado:
 
-    # Exibe o total de parágrafos no documento
-    messagebox.showinfo("Total de parágrafos", str(paragrafoTotal))
+        # Se o usuário cancelar, encerre o programa
+        messagebox.showinfo("Aviso", "Operação cancelada. Encerrando o programa.")
 
-    while paragrafoAtual < paragrafoTotal:
+    else:
 
-        # Obtém o conteúdo do parágrafo selecionado
-        paragrafo = Document(DOCXSelecionado).paragraphs[paragrafoAtual].text
+        try:
 
-        # Exibe o indice do parágrafo selecionado, para fins de controle
-        messagebox.showinfo("Index", str(paragrafoAtual))
+            # Lê o documento DOCX
+            doc = Document(DOCXSelecionado)
 
-        # Exibe o conteúdo do parágrafo selecionado
-        messagebox.showinfo("Texto " + str(paragrafoAtual +1) + "/" + str(paragrafoTotal), paragrafo)
+            totalParagrafos = str(len(doc.paragraphs))
 
-        # Passa para o próximo parágrafo
-        paragrafoAtual += 1
+            # Exibe o total de parágrafos no documento
+            messagebox.showinfo("Total de parágrafos", totalParagrafos)
 
-    #---
+            # Exibe cada parágrafo
+            for i, paragraph in enumerate(doc.paragraphs, start=0):
 
-#------------------------------------------
+                # Exibe o indice do parágrafo selecionado, para fins de controle
+                messagebox.showinfo("Index", str(i))
 
-print('Feito')
+                # Exibe o texto
+                messagebox.showinfo(f"Texto {str(i + 1)}/{totalParagrafos}", paragraph.text)
+
+        except Exception as e:
+
+            # Em caso de erro, exibe uma mensagem
+            messagebox.showerror("Erro", f"Erro ao processar o arquivo: {str(e)}")
+
+    # Dando um feedback para o usuário
+    print('Feito')
+
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,21 @@
-Um programinha simples, que extrai cada parágrafo de um documento DOCX, e exibe na tela, junto com o indice que o representa no documento geral.
+# Obtendo Texto de um Documento DOCX v1.2.0
 
-Aviso: Provavelmente o antvírus irá detecta-lo como vírus, basta adicionar a excessão.
+## Visão Geral
 
-Criado por Lord Dralkhy - Magno da Silva Gomes
+Este script em Python utiliza a biblioteca `tkinter` para criar uma interface gráfica simples que solicita ao usuário o caminho de um arquivo DOCX.
+O programa, em seguida, lê o conteúdo do arquivo e exibe cada parágrafo em caixas de diálogo separadas.
+
+## Como usar o programa
+
+Uma janela de diálogo será exibida solicitando o caminho do arquivo DOCX. Insira o caminho ou clique em "Cancelar" para encerrar o programa.
+
+## Aviso
+
+**Antivírus:**
+Alguns antivírus podem detectar o executável como falso positivo. Adicione o programa às exceções do seu antivírus para garantir seu funcionamento.
+
+**Criado por:**
+Lord Dralkhy - Magno da Silva Gomes  
+GitHub: [https://github.com/Lord-Dralkhy](https://github.com/Lord-Dralkhy)
+
+Aproveite a simplicidade e eficiência para obter texto de um documento DOCX!

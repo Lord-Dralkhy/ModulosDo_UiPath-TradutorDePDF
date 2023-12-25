@@ -1,5 +1,20 @@
-Um programinha simples, que converte um arquivo PDF em um arquivo editável pelo Microsoft Word (.docx).
+# Conversor de PDF para DOCX
 
-Aviso: Provavelmente o antvírus irá detecta-lo como vírus, basta adicionar a excessão.
+Um utilitário simples para converter arquivos PDF em documentos editáveis do Microsoft Word (.docx).
 
-Criado por Lord Dralkhy - Magno da Silva Gomes
+## Como usar o programa:
+
+1. Execute o arquivo `conversorPDF2DOCX.exe`.
+2. Insira o caminho do arquivo PDF na caixa de diálogo.
+3. Clique em "OK" para iniciar a conversão.
+
+## Aviso:
+
+**Antivírus:**
+É possível que alguns antivírus detectem o executável como falso positivo. Adicione o programa às exceções do seu antivírus para garantir seu funcionamento.
+
+**Desenvolvido por:**
+Lord Dralkhy - Magno da Silva Gomes  
+GitHub: https://github.com/Lord-Dralkhy
+
+Aproveite o conversor simples e eficiente!

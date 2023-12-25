@@ -154,44 +154,48 @@ def escolherIdioma():
 
     return idiomaDestino
 
-
-# Dando um feedback para o usuário
-print("Iniciando sistema")
-
-idiomaDestino = escolherIdioma()
-
-# Cria uma janela principal oculta
-root = tk.Tk()
-root.withdraw()
-
-# Iniciando uma variável vazia
-textoOriginal = ""
-
-while not textoOriginal == "sair":
-
-    # Bloco para tratamento de erros ou exceções
-    try:
-
-        # Solicita um texto ao usuário usando a caixa de diálogo
-        textoOriginal = simpledialog.askstring("Texto a ser traduzido", "Digite o texto a ser traduzido:").strip()
-
-    except (AttributeError, TypeError):
-
-        # Usuário cancelou a janela ou ocorreu um erro
-        textoOriginal = "Criado por"
+def main():
 
     # Dando um feedback para o usuário
-    if textoOriginal == "Criado por" or textoOriginal == "sair":
+    print("Iniciando sistema")
 
-        # Exibe uma mensagem na tela com um botão "OK"
-        messagebox.showinfo("Criado por:", "Este programa foi feito por:\nLord Dralkhy - Magno da Silva Gomes")
-        textoOriginal = "sair"
+    idiomaDestino = escolherIdioma()
 
-    # Se o usuário não pediu para fechar o programa, ou digitou algo, faça a tradução
-    if not textoOriginal == "sair" and not textoOriginal == "":
+    # Cria uma janela principal oculta
+    root = tk.Tk()
+    root.withdraw()
 
-        # Exibe uma mensagem na tela com um botão "OK"
-        messagebox.showinfo("Texto traduzido", traduzirFrase(textoOriginal, idiomaDestino))
+    # Iniciando uma variável vazia
+    textoOriginal = ""
 
-# Dando um feedback para o usuário
-print('Feito')
+    while not textoOriginal == "sair":
+
+        # Bloco para tratamento de erros ou exceções
+        try:
+
+            # Solicita um texto ao usuário usando a caixa de diálogo
+            textoOriginal = simpledialog.askstring("Texto a ser traduzido", "Digite o texto a ser traduzido:").strip()
+
+        except (AttributeError, TypeError):
+
+            # Usuário cancelou a janela ou ocorreu um erro
+            textoOriginal = "Criado por"
+
+        # Dando um feedback para o usuário
+        if textoOriginal == "Criado por" or textoOriginal == "sair":
+
+            # Exibe uma mensagem na tela com um botão "OK"
+            messagebox.showinfo("Criado por:", "Este programa foi feito por:\nLord Dralkhy - Magno da Silva Gomes")
+            textoOriginal = "sair"
+
+        # Se o usuário não pediu para fechar o programa, ou digitou algo, faça a tradução
+        if not textoOriginal == "sair" and not textoOriginal == "":
+
+            # Exibe uma mensagem na tela com um botão "OK"
+            messagebox.showinfo("Texto traduzido", traduzirFrase(textoOriginal, idiomaDestino))
+
+    # Dando um feedback para o usuário
+    print('Feito')
+
+if __name__ == "__main__":
+    main()
