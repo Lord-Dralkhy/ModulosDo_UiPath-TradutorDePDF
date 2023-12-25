@@ -1,5 +1,23 @@
-Um programinha simples, que retorna um texto traduzido, apartir de uma fraze que você digitou.
+# Tradutor de Texto Simples
 
-Aviso: Provavelmente o antvírus irá detectar o executável como vírus, basta adicionar a excessão.
+Bem-vindo ao Tradutor de Texto Simples!
 
-Criado por Lord Dralkhy - Magno da Silva Gomes
+Este é um programinha leve que traduz frases com facilidade. Para começar, siga as instruções abaixo:
+
+## Como Usar:
+
+1. Execute o arquivo `tradutorSimples.exe`.
+2. Digite o idioma de destino, ou deixe em branco para exibir a lista de idiomas disponíveis.
+3. Uma caixa de diálogo será exibida. Digite a frase que deseja traduzir.
+4. Clique em "Traduzir" e aguarde o resultado.
+
+## Aviso:
+
+**Antivírus:**
+É possível que alguns antivírus detectem o executável como falso positivo. Adicione o programa às exceções do seu antivírus para garantir seu funcionamento.
+
+**Criado por:**
+Lord Dralkhy - Magno da Silva Gomes
+GitHub: https://github.com/Lord-Dralkhy
+
+Aproveite o tradutor simples e eficiente!

@@ -2,7 +2,7 @@
 Tradutor Simples v1.0.0
 
 Este é um programa simples que permite ao usuário traduzir texto para diferentes idiomas usando a API Google Translate.
-O código está disponível no GitHub: https://github.com/Lord-Dralkhy/ModulosDo_UiPath-TradutorDePDF
+O código está disponível no GitHub: https://github.com/Lord-Dralkhy/ModulosDo_UiPath-TradutorDePDF/tree/main/Tradutor%20Simples
 
 Instruções de Uso:
 1. Certifique-se de ter o arquivo 'Linguagens.txt' com o pack de idiomas no mesmo diretório do executável.
