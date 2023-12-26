@@ -1,0 +1,5 @@
+pip install python-docx
+pip install pyinstaller
+pip install tk
+
+pyinstaller --onefile --additional-hooks-dir=hooks inserirTextoEmDOCX.py
