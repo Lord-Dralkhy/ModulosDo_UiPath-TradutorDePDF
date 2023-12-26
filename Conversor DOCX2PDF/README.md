@@ -1,0 +1,37 @@
+# Conversor de DOCX para PDF v1.0.0
+
+**Descrição Geral:**
+Este é um programa simples que possibilita a conversão de arquivos DOCX para o formato PDF, tornando-os visualizáveis em leitores de PDF, utilizando a biblioteca docx2pdf.
+
+O código-fonte está disponível no GitHub: [link]
+
+## Instruções de Uso:
+
+1. Execute o programa, e uma interface gráfica será exibida.
+2. Insira o caminho do arquivo DOCX na caixa de diálogo, com o nome do arquivo e o formato.
+3. Clique em "OK" para iniciar a conversão.
+
+## Aviso:
+
+**Antivírus:**
+Alguns antivírus podem detectar o executável como falso positivo. Adicione o programa às exceções do seu antivírus para garantir seu funcionamento.
+
+## Como usar o código fonte:
+
+Para executar o código fonte, abra o terminal e digite:
+
+```bash
+python conversorDOCX2PDF.py
+```
+
+## Observação:
+
+- Se ocorrerem erros durante a execução, o programa tentará fornecer informações detalhadas na mensagem de erro resultante.
+
+## Desenvolvido por:
+
+Lord Dralkhy - Magno da Silva Gomes
+
+**GitHub:** [https://github.com/Lord-Dralkhy](https://github.com/Lord-Dralkhy)
+
+Aproveite a simplicidade e eficiência para converter um documento DOCX para um documento PDF!
