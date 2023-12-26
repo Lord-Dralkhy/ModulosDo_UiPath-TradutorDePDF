@@ -2,7 +2,7 @@
 
 Este é um programa simples que permite ao usuário inserir texto em um parágrafo específico de um arquivo DOCX usando a biblioteca `python-docx`.
 
-O código está disponível no GitHub: <LINK>
+O código está disponível no GitHub: https://github.com/Lord-Dralkhy/ModulosDo_UiPath-TradutorDePDF/tree/main/Inserir%20texto%20em%20um%20DOCX
 
 ## Instruções de Uso:
 
